@@ -29,7 +29,7 @@ dishRouter.route('/')
 dishRouter.route('/:dishId')
 .get((req,res,next) => {
     res.end("Will send that dish to you" + req.params.dishId);
-});
+})
 .post((req, res, next) => {
     res.end("POST is not supported with a specific dish");
     res.statusCode = 404;
